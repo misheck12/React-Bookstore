@@ -9,7 +9,7 @@ const AddNewBook = () => (
       <option value="Romance">Romance</option>
       <option value="Documentary">Documentary</option>
       <option value="Fiction">Fiction</option>
-      <option value="Crime">Crime</option>
+      <option value="Crime">History</option>
     </select>
     <button type="submit">Add</button>
   </form>
