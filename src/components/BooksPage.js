@@ -6,9 +6,9 @@ import Books from './Books';
 const BooksPage = () => {
   const bookList = [
     {
-      booktitle: ' The Great Gatsby',
-      author: ' F. Scott Fitzgerald',
-      category: ' Fiction',
+      booktitle: ' The Journey to Triumph in Australia',
+      author: ' R. Kaushik',
+      category: ' History',
       id: uuidv4(),
     },
   ];
