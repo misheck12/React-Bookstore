@@ -2,7 +2,7 @@ import React from 'react';
 
 const CategoryPage = () => (
   <div>
-    <button type="button">Check status</button>
+    <h1>Under construction!!</h1>
   </div>
 );
 
