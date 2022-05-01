@@ -1,7 +1,7 @@
 import React from 'react';
 
 const CategoryPage = () => (
-  <div>
+  <div className="underContruction">
     <h1>Under construction!!</h1>
   </div>
 );
