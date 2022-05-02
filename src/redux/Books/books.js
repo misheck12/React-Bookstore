@@ -3,7 +3,7 @@
 const ADD_BOOK = 'bookStore/books/ADD_BOOK';
 const REMOVE_BOOK = 'bookStore/books/REMOVE_BOOK';
 const GET_BOOKS = 'bookStore/books/GET_BOOKS';
-const baseURL = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/7Qdz6p3vp4ymDH6hhInP/books';
+const baseURL = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/B1JO2YUNe5p2kRKelEM9/books/';
 
 const initialState = [];
 
