@@ -6,6 +6,7 @@ import { postBook } from '../redux/Books/books';
 const AddNewBook = () => {
   const [inputValues, setInputValues] = useState({
     title: '',
+    author: '',
     id: '',
     category: '',
   });
@@ -15,10 +16,11 @@ const AddNewBook = () => {
   const submitBookToStore = (e) => {
     e.preventDefault();
     const id = uuidv4();
-    const { title, category } = inputValues;
+    const { title, author, category } = inputValues;
     const newBook = {
       id,
       title,
+      author,
       category,
     };
 
@@ -33,6 +35,7 @@ const AddNewBook = () => {
       dispatch(postBook(newBook));
       setInputValues({
         title: '',
+        author: '',
         id: '',
         category: '',
       });
@@ -57,6 +60,13 @@ const AddNewBook = () => {
             type="text"
             placeholder="Book title"
             name="title"
+            onChange={onChange}
+            required
+          />
+          <input
+            type="text"
+            placeholder="Author"
+            name="author"
             onChange={onChange}
             required
           />
