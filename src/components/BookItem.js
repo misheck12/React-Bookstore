@@ -10,6 +10,7 @@ const BookItem = ({ book }) => {
   const dispatch = useDispatch();
 
   const HandleRemove = () => {
+    console.log(id);
     dispatch(deleteBook(id));
   };
 
