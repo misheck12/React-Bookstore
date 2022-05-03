@@ -2,6 +2,10 @@
 
 # Bookstore
 
+### live link
+
+https://sweet-marshmallow-bc973f.netlify.app
+
 
 > "Math magicians" is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to: Make simple calculations. Read a random math-related quote.
 
