@@ -3,7 +3,7 @@
 const ADD_BOOK = 'bookStore/books/ADD_BOOK';
 const REMOVE_BOOK = 'bookStore/books/REMOVE_BOOK';
 const GET_BOOKS = 'bookStore/books/GET_BOOKS';
-const baseURL = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/B1JO2YUNe5p2kRKelEM9/books/';
+const baseURL = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/lv2Hg0op5tEhO6teIxmS/books/';
 
 const initialState = [];
 
@@ -46,6 +46,7 @@ export const getBooksList = () => async (dispatch) => {
   booksID.map((key) => formatedBooks.push({
     id: key,
     title: booksList[key][0].title,
+    author: booksList[key][0].author,
     category: booksList[key][0].category,
   }));
   dispatch(getBooks(formatedBooks));
@@ -57,6 +58,7 @@ export const postBook = (newBook) => async (dispatch) => {
     body: JSON.stringify({
       item_id: newBook.id,
       title: newBook.title,
+      author: newBook.author,
       category: newBook.category,
     }),
     headers: {

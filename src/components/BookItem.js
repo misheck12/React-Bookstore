@@ -5,7 +5,7 @@ import { deleteBook } from '../redux/Books/books';
 
 const BookItem = ({ book }) => {
   const {
-    title, id, category,
+    title, id, author, category,
   } = book;
   const dispatch = useDispatch();
 
@@ -21,6 +21,11 @@ const BookItem = ({ book }) => {
         { title }
       </p>
       <p>
+        Author:
+        {' '}
+        { author }
+      </p>
+      <p>
         Category:
         {' '}
         {category}
@@ -34,6 +39,7 @@ BookItem.propTypes = {
   book: PropTypes.shape(
     {
       title: PropTypes.string.isRequired,
+      author: PropTypes.string.isRequired,
       id: PropTypes.string.isRequired,
       category: PropTypes.string.isRequired,
     },
